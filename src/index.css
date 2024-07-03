@@ -1,9 +1,11 @@
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #f8f9fa;
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .navbar {
@@ -42,6 +44,8 @@ body {
 
 .main-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .movie-detail {
@@ -63,7 +67,6 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
-
 
 .movie-detail .nav {
   background-color: rgba(0, 0, 0, 0.5);
@@ -93,16 +96,13 @@ body {
 .card-custom {
   height: 449px; 
   width: 328px;
-  top: 136px;
-  left: 57px;
   gap: 0px;
   border-radius: var(--Radiusradius-sm);
-  opacity: 0;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.2s, opacity 0.2s;
-  opacity: 1;
 }
 
 .card-custom:hover {
@@ -231,6 +231,7 @@ h2 {
   background-color: #032541;
   color: #ffffff;
   padding: 40px 0;
+  flex-shrink: 0;
 }
 
 .footer h5 {
